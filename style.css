@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Fox';
+    src: url('/Fonts/FoxAndBower.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fox', sans-serif;
+    height: 100vh;
+    padding: 20px;
+    /*font-family: 'Sonora', sans-serif;*/
+    background-color: black;
+}
+
+main {
+    /* This Element*/
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(4,1fr);
+    gap: 20px;
+    /* Inner Elements*/
+
+}
+
+main div {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    font-size: 3vw;
+}
